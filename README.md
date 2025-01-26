@@ -6,7 +6,7 @@ Projeto desenvolvido durante o curso **Iniciante em Programação G8 - ONE** da 
 
 ## 🔗 Link do Projeto
 
-Acesse o projeto online: [Amigo Secreto (Em breve)](https://amigo-secreto-chi-teal.vercel.app/)  
+Acesse o projeto online: [Amigo Secreto](https://amigo-secreto-chi-teal.vercel.app/)  
 
 ---
 
