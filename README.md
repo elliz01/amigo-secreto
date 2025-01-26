@@ -10,6 +10,14 @@ Acesse o projeto online: [Amigo Secreto (Em breve)](https://seu-usuario.github.i
 
 ---
 
+## 💻 Tecnologias
+
+- HTML
+- CSS
+- JavaScript
+  
+---
+
 ## 🛠️ Funcionalidades
 
 - **Adicionar Amigos**: Insira nomes na lista.
@@ -34,14 +42,6 @@ Personalizei o layout original para refletir algo que eu gosto, tornando o proje
 | Desktop | Mobile |
 |---------|--------|
 | ![Resultado Final Desktop](layout/finalDesktop.png) | ![Resultado Final Mobile](layout/finalMobile.png) |
----
-
-## 💻 Tecnologias
-
-- HTML
-- CSS
-- JavaScript
-
 ---
 
 ## 📄 Licença
