@@ -1,0 +1,278 @@
+:root {
+    --color-primary: #FFFF;
+    --color-secondary: #3F331F;
+    --color-tertiary: #581518;
+    --color-button: #581518;
+    --color-button-hover: #400609;
+    --color-text: #FFFF;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.image-left,
+.image-right {
+    width: 50%; 
+    height: auto; 
+    max-height: 100%; 
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.main-title {
+    position: absolute;
+    color: #333;
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+    font-size: 128px;
+    font-family: "Under Influence", serif;
+    font-weight: 100;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.palavraAmigo{
+    color: #FF0004;
+    text-shadow: 
+    4px 3px 0px black,  
+    -1px -1px 0px black, 
+    1px -1px 0px black,  
+    -1px 1px 0px black;  
+}
+
+@media (max-width: 800px) {
+    .header-banner {
+        height: 40vh; /
+    }
+
+    .image-left,
+    .image-right {
+        height: 100%; 
+        width: 100%; 
+    }
+
+    .main-title {
+        font-size: 5rem; 
+    }
+}
+
+/* Seção de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botão */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #400609;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botão de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/*caixas com os nomes inseridos e sorteio*/
+
+#caixas {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    width: 40%; 
+    z-index: 10; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items:flex-start;
+}
+
+@media (max-width: 800px){
+    #caixas {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+        width: 100%; 
+        z-index: 10; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-items:flex-start;
+    }
+}
+
+#nomesInseridosCaixa h3, #resultadoCaixa h3 {
+    background-color: #400609;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    width: 100%;
+}
+
+#nomesInseridosCaixa, #resultadoCaixa {
+    background-color: #DDD;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0; 
+    border-radius: 5px; 
+    font-family: "Inter", sans-serif;
+    font-size: 18px; 
+    color: #000;
+}
+
+
+#resultadoCaixa{
+    height: 90%;
+    text-align: center;
+}
+
+#resultadoSorteio{
+    padding: 15px;
+    font-weight: bold;
+}
+
+
+/* Lista*/
+ul {
+    list-style-type: none;
+    color: #000; 
+    font-family: "Inter", sans-serif;
+    margin-left: 20px;
+}
